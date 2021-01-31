@@ -15,148 +15,181 @@
 </head>
 
 <body>
-    <!--Header and Menu Section-->
-    <header class="container">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="active" href="#">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section id="booking-area">
 
-    <!--Booking Section-->
-    <main class="main-content container">
-        <div class="booking-form">
-            <h3>Booking Flights</h3>
-            <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
-            </div>
-            <div class="input-group">
-                <label for="">Flying To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+        <!-- Header and Menu Section -->
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!----Booking Section -->
+        <main class="main-content container">
+            <div class="booking-form">
+                <h3>Booking Flights</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
                         <input class="inp-style" type="date" name="">
-                </div>
-                <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
-                </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <h5 id="ticket-total">$150</h5>
-                    <input id="ticket-count" class="inp-style inp-width" type="number" name="" value="1">
-                </div>
-                <div class="plus-minus-btn">
-                    <button onclick="handlePriceChange('ticket', false)" class="btn btn-dark"><i
-                            class="fas fa-minus">-</i></button>
-                    <button onclick="handlePriceChange('ticket', true)" class="btn btn-info"><i
-                            class="fas fa-plus">+</i></button>
-                </div>
-            </div>
-
-            <div class="input-group f-class">
-
-                <div>
-                    <label for="">Economy ($100)</label>
-                    <h5 id="eco-total">$100</h5>
-                    <input id="eco-count" class="inp-style inp-width" type="number" name="" value="1">
-                </div>
-                <div class="plus-minus-btn">
-                    <button onclick="handlePriceChange('eco', false)" class="btn btn-dark"><i
-                            class="fas fa-plus">-</i></button>
-                    <button onclick="handlePriceChange('eco', true)" class="btn btn-info"><i
-                            class="fas fa-plus">+</i></button>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
                     </div>
-                    <div class="right">
-                        <p id="total-price">$500</p>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <h5 id="ticket-total">$150</h5>
+                        <input id="ticket-count" class="inp-style inp-width" type="number" name="" value="1">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <button onclick="handlePriceChange('ticket', false)" class="btn btn-dark"><i
+                                class="fas fa-minus">-</i></button>
+                        <button onclick="handlePriceChange('ticket', true)" class="btn btn-info"><i
+                                class="fas fa-plus">+</i></button>
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class">
+
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <h5 id="eco-total">$100</h5>
+                        <input id="eco-count" class="inp-style inp-width" type="number" name="" value="1">
                     </div>
-                    <div class="right">
-                        <p id="tax-amount">$50</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p id="grand-total">$550</p>
+                    <div class="plus-minus-btn">
+                        <button onclick="handlePriceChange('eco', false)" class="btn btn-dark"><i
+                                class="fas fa-minus">-</i></button>
+                        <button onclick="handlePriceChange('eco', true)" class="btn btn-info"><i
+                                class="fas fa-plus">+</i></button>
                     </div>
                 </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p id="total-price">$500</p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p id="tax-amount">$50</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p id="grand-total">$550</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="book" class="btn-style">Book Now</button>
+
             </div>
-            <button class="btn-style">Book Now</button>
+
+            <div class="booking-content">
+                <h1>discover <br> around the world</h1>
+                <p class="taxt">Popular departure points <br> Find flight tickets from airports most frequently chosen by other travelers. <br>
+                Flights from Chicago Midway <br> Flights from Newark Intl <br> Flights from Reagan National <br>
+                 Flights from Detroit <br>
+                 Metropolitan Wayne County. <br>Flights from La Guardia <br>Flights from Sanford <br>Flights from 
+                 Washington Dulles Intl </p>
+            </div>
+    </section>
+    <div id="transactiion-area">
+        <div class="success-area text-center">
+            <h1>Your Booking Flights</h1>
+            <h2>successfully Done</h2>
+            <p style="color: gray;">See once again. all the best</p>
+            <button id="ok" class="btn btn-info">OK</button>
         </div>
+    </div>
+    <script>
+        //////****** ticket booking add event handler ********////////
 
-        <div class="booking-content">
-            <h1>discover <br> around the world</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
-                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
-                voluptatibus quam</p>
-        </div>
-        </section>
-        <script>
-
-            function handlePriceChange(price, isIncrease) {
-                const priceInput = document.getElementById(price + '-count');
-                const priceCount = parseInt(priceInput.value);
-                let priceNewCount = priceCount;
-                if (isIncrease == true) {
-                    priceNewCount = priceCount + 1;
-                }
-                if (isIncrease == false && priceCount > 0) {
-                    priceNewCount = priceCount - 1;
-                }
-                priceInput.value = priceNewCount;
-                let priceTotal = 0;
-                if (price == 'ticket') {
-                    priceTotal = priceNewCount * 150;
-                }
-                if (price == 'eco') {
-                    priceTotal = priceNewCount * 100;
-                }
-                document.getElementById(price + '-total').innerText = priceTotal;
-                calculateTotal()
+        function handlePriceChange(price, isIncrease) {
+            const priceInput = document.getElementById(price + '-count');
+            const priceCount = parseInt(priceInput.value);
+            let priceNewCount = priceCount;
+            if (isIncrease == true) {
+                priceNewCount = priceCount + 1;
             }
-
-            function calculateTotal() {
-                const ticketInput = document.getElementById('ticket-count');
-                const ticketCount = parseInt(ticketInput.value);
-
-                const ecoInput = document.getElementById('eco-count');
-                const ecoCount = parseInt(ecoInput.value);
-
-                const totalPrice = ticketCount * 150 + ecoCount * 100;
-                document.getElementById('total-price').innerText = totalPrice;
-
-                const tax = Math.round(totalPrice * 0.1);
-                document.getElementById('tax-amount').innerText = tax;
-
-                const grandTotal = totalPrice + tax;
-                document.getElementById('grand-total').innerText = grandTotal;
-
+            if (isIncrease == false && priceCount > 0) {
+                priceNewCount = priceCount - 1;
             }
-        </script>
+            priceInput.value = priceNewCount;
+            let priceTotal = 0;
+            if (price == 'ticket') {
+                priceTotal = priceNewCount * 150;
+            }
+            if (price == 'eco') {
+                priceTotal = priceNewCount * 100;
+            }
+            document.getElementById(price + '-total').innerText ='$' + priceTotal;
+            calculateTotal()
+        }
+
+        //////******* Calculation area *******/////////
+        function calculateTotal() {
+            const ticketInput = document.getElementById('ticket-count');
+            const ticketCount = parseInt(ticketInput.value);
+
+            const ecoInput = document.getElementById('eco-count');
+            const ecoCount = parseInt(ecoInput.value);
+
+            const totalPrice = ticketCount * 150 + ecoCount * 100;
+            document.getElementById('total-price').innerText ='$' + totalPrice;
+
+            const tax = Math.round(totalPrice * 0.1);
+            document.getElementById('tax-amount').innerText ='$' + tax;
+
+            const grandTotal = totalPrice + tax;
+            document.getElementById('grand-total').innerText ='$' + grandTotal;
+        }
+
+
+
+        // Book Now Button add event handler
+        const bookNowBtn = document.getElementById('book');
+        bookNowBtn.addEventListener("click", function () {
+            const bookingArea = document.getElementById('booking-area');
+            bookingArea.style.display = "none";
+
+            const transactionArea = document.getElementById('transactiion-area');
+            transactionArea.style.display = "block";
+
+            const finishBtn = document.getElementById('ok');
+            finishBtn.addEventListener("click", function(){
+                const transactionArea = document.getElementById('transactiion-area');
+                transactionArea.style.display = "none";
+            })
+        })
+        ///////******* That's It **********//////
+    </script>
 </body>
 
 </html>

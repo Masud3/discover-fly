@@ -54,6 +54,9 @@ nav ul li a:hover, a.active{
 .booking-form h3{
     margin: 10px 0px;
 }
+.taxt{
+    color: lightcyan;
+}
 .booking-form  .input-group{
     margin: 10px 0;
 }
@@ -120,7 +123,24 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
-/* .btn-default{
-    background-color: red;
-} */
-    
+
+
+/* ***************************************
+    Book Now Button style area
+*************************************** */
+#transactiion-area{
+    display: none;
+}
+.success-area{
+    width: 420px;
+    height: 220px;
+    padding: 20px 10px;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 15px gray;
+    border: 1px solid lightyellow;
+    border-radius: 15px;
+}
+
+/* That's It */
